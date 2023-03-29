@@ -1,0 +1,222 @@
+/*https://colorhunt.co/palette/8cba51deff8bfbceb5ff5d6c*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #080808; /*trocs o fundo do site*/
+}
+
+ul/*modifica a lista do site */ {
+    list-style: none;
+    font-weight: bold; /*deixa a fonte em negrito*/
+    color: white;
+}
+
+a /*modifica os links*/{
+    text-decoration: none;
+    color: inherit; /*mantem a cor original da fonte*/
+}
+
+h1 {
+    color: #fdf7f7;
+    font-size: 2rem;
+}
+
+p{
+    color: #f5eeee;
+    font-size: 25px;
+}
+
+button{
+    color: rgb(0, 0, 0);
+    padding: 10px 15px; /*altura e largura*/
+    border-radius: 8px; /*circunferencia*/
+    border: 0;
+    font-weight: bold; /*espessura da fonte*/
+    background: #0e0d0d; /*cor do fundo*/
+    color: #f7f7f1; 
+}
+
+header {
+    background: no-repeat center/cover url('https://c4.wallpaperflare.com/wallpaper/407/964/932/flamengo-clube-de-regatas-do-flamengo-red-black-wallpaper-preview.jpg');
+    height: calc(100vh - 150px);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 150px;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul { /* deixa a lista do canto superior do site um do lado do outro */
+    display: flex;
+}
+
+header nav ul li { /* deixa um espaço na lista*/
+    margin: 0 15px;
+}
+
+.header-content { 
+    max-width: 500px;
+    margin: 150px auto; /* deixar automatico*/
+    text-align: center;
+}
+
+.header-content h1 { /* edita o titulo */
+    margin-bottom: 10px; /*tamanho do botao*/
+    font-size: 4rem;/*tamanho do titulo*/
+}
+
+.jogadores {
+    background: #080808;
+    padding: 15px;
+}
+
+.jogadores .jogadores-cards {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.jogadores .jogadores-title {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.jogadores .card {
+    width: 250px;
+    height: 550px;
+    background: #080808;
+    border-radius: 24px 0;
+    margin: 25px;
+    position: relative;
+}
+
+.jogadores .card-image { /*editar a imagem com o link*/
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 24px 0 0;
+    object-fit: cover;
+}
+
+.jogadores .card-content {
+    padding: 0 15px;
+}
+
+.jogadores .card-content ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.jogadores .card-content ul li {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.jogadores .card-content li svg {/*tamanho dos icones*/
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.jogadores .card-content h1{
+    font-size: 1rem;
+}
+
+.jogadores .card .card-tag-top{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #ff0000;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.jogadores .card .card-tag-bottom{
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #080808;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.jogadores .card .card-tag-top p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.historia {
+    padding: 15px;
+}
+
+.historia .historia-tittle {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.historia .historia-cards {
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.historia .card { /*coloca um do lado do outro*/
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.historia .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+}
+
+.historia .card svg:hover{
+    stroke: rgb(247, 8, 8);
+    transform: scale(1.1);
+}
+
+.historia .card h3{
+    font-weight: bold;
+}
+
+.historia .card p {
+    color: rgb(245, 2, 2);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.historia .card .card-content{
+    height: 170px;
+    text-align: center;
+}
+
